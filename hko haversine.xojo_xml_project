@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RBProject version="2020r2.1" FormatVersion="2" MinIDEVersion="20070100">
+<block type="Project" ID="0">
+ <ProjectSavedInVers>2020.021</ProjectSavedInVers>
+ <IDEVersion>20200201</IDEVersion>
+ <MajorVersion>1</MajorVersion>
+ <MinorVersion>0</MinorVersion>
+ <SubVersion>0</SubVersion>
+ <Release>0</Release>
+ <NonRelease>0</NonRelease>
+ <Region></Region>
+ <ShortVersion></ShortVersion>
+ <LongVersion></LongVersion>
+ <InfoVersion></InfoVersion>
+ <AutoIncVersion>0</AutoIncVersion>
+ <DefaultViewID>63510527</DefaultViewID>
+ <ProjectType>0</ProjectType>
+ <DefaultLanguage>0</DefaultLanguage>
+ <CurrentLanguage>0</CurrentLanguage>
+ <DefaultEncoding>0</DefaultEncoding>
+ <BuildFlags>18688</BuildFlags>
+ <UseBuildsFolder>1</UseBuildsFolder>
+ <WebApp>0</WebApp>
+ <Icon>
+ </Icon>
+ <MacCreator></MacCreator>
+ <BuildCarbonMachOName>hko haversine</BuildCarbonMachOName>
+ <BundleIdentifier>com.kongduino.hkohaversine</BundleIdentifier>
+ <WinMDICaption></WinMDICaption>
+ <BuildWinName>hko haversine.exe</BuildWinName>
+ <BuildWinMDI>0</BuildWinMDI>
+ <BuildWinCompanyName>Kongduino</BuildWinCompanyName>
+ <BuildWinProductName></BuildWinProductName>
+ <BuildWinInternalName></BuildWinInternalName>
+ <BuildWinFileDescription></BuildWinFileDescription>
+ <UseGDIPlus>0</UseGDIPlus>
+ <HiDPI>1</HiDPI>
+ <DarkMode>1</DarkMode>
+ <BuildLinuxX86Name>hko haversine</BuildLinuxX86Name>
+ <DebuggerCommandLine></DebuggerCommandLine>
+ <LinuxArchitecture>1</LinuxArchitecture>
+ <MacArchitecture>1</MacArchitecture>
+ <OptimizationLevel>0</OptimizationLevel>
+ <CopyWindowsRedist>0</CopyWindowsRedist>
+ <WindowsVersions>{35138b9a-5d96-4fbd-8e2d-a2440225f93a}|{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}|{1f676c76-80e1-4239-95bb-83d0f6d0da78}|{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}</WindowsVersions>
+ <WindowsRunAs>0</WindowsRunAs>
+</block>
+<block type="Module" ID="543516671">
+ <ObjName>App</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>Application</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <IsApplicationObject>1</IsApplicationObject>
+ <Compatibility></Compatibility>
+ <PropertyVal Name="MenuBar">491169791</PropertyVal>
+ <ViewBehavior>
+ </ViewBehavior>
+ <Constant>
+  <ItemName>kFileQuitShortcut</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>623437823</PartID>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemType>0</ItemType>
+  <ItemDef></ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>1</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>Cmd+Q</ItemDef>
+  </ConstantInstance>
+  <ConstantInstance>
+   <ItemPlatform>5</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>Ctrl+Q</ItemDef>
+  </ConstantInstance>
+ </Constant>
+ <Constant>
+  <ItemName>kFileQuit</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>933634047</PartID>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemType>0</ItemType>
+  <ItemDef>&amp;Quit</ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>2</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>E&amp;xit</ItemDef>
+  </ConstantInstance>
+ </Constant>
+ <Constant>
+  <ItemName>kEditClear</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>2076602367</PartID>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemType>0</ItemType>
+  <ItemDef>&amp;Delete</ItemDef>
+  <ItemFlags>0</ItemFlags>
+  <ConstantInstance>
+   <ItemPlatform>2</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>&amp;Delete</ItemDef>
+  </ConstantInstance>
+  <ConstantInstance>
+   <ItemPlatform>5</ItemPlatform>
+   <ItemLanguage>0</ItemLanguage>
+   <ItemDef>&amp;Delete</ItemDef>
+  </ConstantInstance>
+ </Constant>
+</block>
+<block type="Window" ID="63510527">
+ <ObjName>Window1</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>1</IsClass>
+ <Superclass>Window</Superclass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <HookInstance>
+  <ItemName>Open</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>806821887</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub Open()</SourceLine>
+   <SourceLine>haversine.init()</SourceLine>
+   <SourceLine>Self.Left=0</SourceLine>
+   <SourceLine>Self.Top=45</SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+ </HookInstance>
+ <PropertyVal Name="MenuBarVisible">True</PropertyVal>
+ <PropertyVal Name="MenuBar">491169791</PropertyVal>
+ <PropertyVal Name="Backdrop">0</PropertyVal>
+ <PropertyVal Name="BackgroundColor">16777215</PropertyVal>
+ <PropertyVal Name="HasBackgroundColor">False</PropertyVal>
+ <PropertyVal Name="Visible">True</PropertyVal>
+ <PropertyVal Name="DefaultLocation">0</PropertyVal>
+ <PropertyVal Name="ImplicitInstance">True</PropertyVal>
+ <PropertyVal Name="FullScreen">False</PropertyVal>
+ <PropertyVal Name="MacProcID">0</PropertyVal>
+ <PropertyVal Name="Composite">False</PropertyVal>
+ <PropertyVal Name="Resizeable">True</PropertyVal>
+ <PropertyVal Name="HasFullScreenButton">False</PropertyVal>
+ <PropertyVal Name="HasMinimizeButton">True</PropertyVal>
+ <PropertyVal Name="HasMaximizeButton">True</PropertyVal>
+ <PropertyVal Name="HasCloseButton">True</PropertyVal>
+ <PropertyVal Name="Title">HKO Haversine</PropertyVal>
+ <PropertyVal Name="Type">0</PropertyVal>
+ <PropertyVal Name="MaximumHeight">32000</PropertyVal>
+ <PropertyVal Name="MaximumWidth">380</PropertyVal>
+ <PropertyVal Name="MinimumHeight">306</PropertyVal>
+ <PropertyVal Name="MinimumWidth">380</PropertyVal>
+ <PropertyVal Name="Height">424</PropertyVal>
+ <PropertyVal Name="Width">380</PropertyVal>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Interfaces</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Width</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>600</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Height</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>400</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MinimumWidth</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>64</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MinimumHeight</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>64</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MaximumWidth</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>32000</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MaximumHeight</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Size</PropertyGroup>
+   <PropertyValue>32000</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Type</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Types</ItemType>
+   <EditorType>Enum</EditorType>
+   <Enumeration>
+    <ItemDef>0 - Document</ItemDef>
+    <ItemDef>1 - Movable Modal</ItemDef>
+    <ItemDef>2 - Modal Dialog</ItemDef>
+    <ItemDef>3 - Floating Window</ItemDef>
+    <ItemDef>4 - Plain Box</ItemDef>
+    <ItemDef>5 - Shadowed Box</ItemDef>
+    <ItemDef>6 - Rounded Window</ItemDef>
+    <ItemDef>7 - Global Floating Window</ItemDef>
+    <ItemDef>8 - Sheet Window</ItemDef>
+    <ItemDef>9 - Metal Window</ItemDef>
+    <ItemDef>11 - Modeless Dialog</ItemDef>
+   </Enumeration>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Title</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>Untitled</PropertyValue>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HasCloseButton</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HasMaximizeButton</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HasMinimizeButton</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HasFullScreenButton</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Resizeable</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Frame</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Composite</ObjName>
+   <PropertyGroup>OS X (Carbon)</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MacProcID</ObjName>
+   <PropertyGroup>OS X (Carbon)</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>FullScreen</ObjName>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>ImplicitInstance</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>DefaultLocation</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Locations</ItemType>
+   <EditorType>Enum</EditorType>
+   <Enumeration>
+    <ItemDef>0 - Default</ItemDef>
+    <ItemDef>1 - Parent Window</ItemDef>
+    <ItemDef>2 - Main Screen</ItemDef>
+    <ItemDef>3 - Parent Window Screen</ItemDef>
+    <ItemDef>4 - Stagger</ItemDef>
+   </Enumeration>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Visible</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Behavior</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>HasBackgroundColor</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Background</PropertyGroup>
+   <PropertyValue>False</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>BackgroundColor</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Background</PropertyGroup>
+   <PropertyValue>&amp;hFFFFFF</PropertyValue>
+   <ItemType>Color</ItemType>
+   <EditorType>Color</EditorType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Backdrop</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Background</PropertyGroup>
+   <ItemType>Picture</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MenuBar</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Menus</PropertyGroup>
+   <ItemType>MenuBar</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>MenuBarVisible</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Deprecated</PropertyGroup>
+   <PropertyValue>True</PropertyValue>
+   <ItemType>Boolean</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+ <ControlBehavior>
+  <Superclass>Label</Superclass>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>Label</Superclass>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>TextField</Superclass>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>TextField</Superclass>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>Listbox</Superclass>
+ </ControlBehavior>
+ <ControlBehavior>
+  <Superclass>PushButton</Superclass>
+  <HookInstance>
+   <ItemName>Action</ItemName>
+   <Compatibility></Compatibility>
+   <Visible>1</Visible>
+   <PartID>1554335743</PartID>
+   <ItemSource>
+    <TextEncoding>134217984</TextEncoding>
+    <SourceLine>Sub Action()</SourceLine>
+    <SourceLine>Dim lat, lon As Double</SourceLine>
+    <SourceLine>Dim d As Dictionary</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>lat = tfLat.Text.Val()</SourceLine>
+    <SourceLine>lon = tfLon.Text.Val()</SourceLine>
+    <SourceLine></SourceLine>
+    <SourceLine>d = haversine.closestDataPoint(lat, lon)</SourceLine>
+    <SourceLine>lbResults.AddRow "Coordinates: "+Format(lat, "###.00000")+", "+Format(lon, "###.00000")</SourceLine>
+    <SourceLine>lbResults.AddRow "&gt; HKO station: "+d.Value("name").StringValue</SourceLine>
+    <SourceLine>lbResults.AddRow "&gt; Coordinates: "+Format(d.Value("lat").DoubleValue, "###.00000")+", "+Format(d.Value("lon").DoubleValue, "###.00000")</SourceLine>
+    <SourceLine>lbResults.AddRow "&gt; Distance: "+Format(d.Value("distance").DoubleValue, "###.00")+" km"</SourceLine>
+    <SourceLine>End Sub</SourceLine>
+   </ItemSource>
+  </HookInstance>
+ </ControlBehavior>
+ <Control>
+  <ControlClass>Label</ControlClass>
+  <ItemName>Label</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Text">Latitude:</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="TextColor">0</PropertyVal>
+  <PropertyVal Name="TextAlignment">0</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">0</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">Label1</PropertyVal>
+  <ControlIndex>0</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>678465535</PartID>
+ </Control>
+ <Control>
+  <ControlClass>Label</ControlClass>
+  <ItemName>Label</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Text">Longitude:</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="TextColor">0</PropertyVal>
+  <PropertyVal Name="TextAlignment">0</PropertyVal>
+  <PropertyVal Name="Selectable">False</PropertyVal>
+  <PropertyVal Name="Multiline">False</PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">1</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">20</PropertyVal>
+  <PropertyVal Name="Left">145</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Label</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">Label2</PropertyVal>
+  <ControlIndex>1</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>1806698495</PartID>
+ </Control>
+ <Control>
+  <ControlClass>TextField</ControlClass>
+  <ItemName>TextField</ItemName>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="ReadOnly">False</PropertyVal>
+  <PropertyVal Name="ValidationMask"></PropertyVal>
+  <PropertyVal Name="MaximumCharactersAllowed">0</PropertyVal>
+  <PropertyVal Name="AllowSpellChecking">False</PropertyVal>
+  <PropertyVal Name="TextAlignment">0</PropertyVal>
+  <PropertyVal Name="AllowTabs">False</PropertyVal>
+  <PropertyVal Name="Text">22.279387</PropertyVal>
+  <PropertyVal Name="Hint"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="AllowFocusRing">True</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="TextColor">0</PropertyVal>
+  <PropertyVal Name="Password">False</PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="Format"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="HasBorder">True</PropertyVal>
+  <PropertyVal Name="BackgroundColor">16777215</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">2</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">52</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tfLat</PropertyVal>
+  <ControlIndex>2</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>763095039</PartID>
+ </Control>
+ <Control>
+  <ControlClass>TextField</ControlClass>
+  <ItemName>TextField</ItemName>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="ReadOnly">False</PropertyVal>
+  <PropertyVal Name="ValidationMask"></PropertyVal>
+  <PropertyVal Name="MaximumCharactersAllowed">0</PropertyVal>
+  <PropertyVal Name="AllowSpellChecking">False</PropertyVal>
+  <PropertyVal Name="TextAlignment">0</PropertyVal>
+  <PropertyVal Name="AllowTabs">False</PropertyVal>
+  <PropertyVal Name="Text">114.010401</PropertyVal>
+  <PropertyVal Name="Hint"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="AllowFocusRing">True</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="TextColor">0</PropertyVal>
+  <PropertyVal Name="Password">False</PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="Format"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="HasBorder">True</PropertyVal>
+  <PropertyVal Name="BackgroundColor">16777215</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">3</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">22</PropertyVal>
+  <PropertyVal Name="Width">100</PropertyVal>
+  <PropertyVal Name="Top">52</PropertyVal>
+  <PropertyVal Name="Left">145</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">TextField</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">tfLon</PropertyVal>
+  <ControlIndex>3</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>1659152383</PartID>
+ </Control>
+ <Control>
+  <ControlClass>Listbox</ControlClass>
+  <ItemName>Listbox</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="DataField"></PropertyVal>
+  <PropertyVal Name="DataSource"></PropertyVal>
+  <PropertyVal Name="RowSelectionType">0</PropertyVal>
+  <PropertyVal Name="RequiresSelection">False</PropertyVal>
+  <PropertyVal Name="AllowExpandableRows">False</PropertyVal>
+  <PropertyVal Name="AllowRowReordering">False</PropertyVal>
+  <PropertyVal Name="AllowRowDragging">False</PropertyVal>
+  <PropertyVal Name="AllowResizableColumns">False</PropertyVal>
+  <PropertyVal Name="AllowAutoHideScrollbars">True</PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="AllowFocusRing">True</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="DropIndicatorVisible">False</PropertyVal>
+  <PropertyVal Name="HasVerticalScrollbar">True</PropertyVal>
+  <PropertyVal Name="HasHorizontalScrollbar">False</PropertyVal>
+  <PropertyVal Name="InitialValue"></PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="HeadingIndex">-1</PropertyVal>
+  <PropertyVal Name="HasHeader">False</PropertyVal>
+  <PropertyVal Name="GridLinesVerticalStyle">0</PropertyVal>
+  <PropertyVal Name="GridLinesHorizontalStyle">0</PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="DefaultRowHeight">-1</PropertyVal>
+  <PropertyVal Name="ColumnWidths"></PropertyVal>
+  <PropertyVal Name="ColumnCount">1</PropertyVal>
+  <PropertyVal Name="HasBorder">True</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="_ScrollWidth">-1</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">4</PropertyVal>
+  <PropertyVal Name="LockBottom">True</PropertyVal>
+  <PropertyVal Name="LockRight">True</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">318</PropertyVal>
+  <PropertyVal Name="Width">340</PropertyVal>
+  <PropertyVal Name="Top">86</PropertyVal>
+  <PropertyVal Name="Left">20</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">Listbox</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">lbResults</PropertyVal>
+  <ControlIndex>4</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>1739726847</PartID>
+ </Control>
+ <Control>
+  <ControlClass>PushButton</ControlClass>
+  <ItemName>PushButton</ItemName>
+  <PropertyVal Name="InitialParent"></PropertyVal>
+  <PropertyVal Name="Underline">False</PropertyVal>
+  <PropertyVal Name="Italic">False</PropertyVal>
+  <PropertyVal Name="Bold">False</PropertyVal>
+  <PropertyVal Name="FontUnit">0</PropertyVal>
+  <PropertyVal Name="FontSize">0.0e+</PropertyVal>
+  <PropertyVal Name="FontName">System</PropertyVal>
+  <PropertyVal Name="Visible">True</PropertyVal>
+  <PropertyVal Name="Transparent">False</PropertyVal>
+  <PropertyVal Name="Tooltip"></PropertyVal>
+  <PropertyVal Name="Enabled">True</PropertyVal>
+  <PropertyVal Name="Default">True</PropertyVal>
+  <PropertyVal Name="Caption">OK</PropertyVal>
+  <PropertyVal Name="Cancel">False</PropertyVal>
+  <PropertyVal Name="MacButtonStyle">0</PropertyVal>
+  <PropertyVal Name="AllowAutoDeactivate">True</PropertyVal>
+  <PropertyVal Name="TabStop">True</PropertyVal>
+  <PropertyVal Name="TabPanelIndex">0</PropertyVal>
+  <PropertyVal Name="TabIndex">5</PropertyVal>
+  <PropertyVal Name="LockBottom">False</PropertyVal>
+  <PropertyVal Name="LockRight">False</PropertyVal>
+  <PropertyVal Name="LockTop">True</PropertyVal>
+  <PropertyVal Name="LockLeft">True</PropertyVal>
+  <PropertyVal Name="Height">20</PropertyVal>
+  <PropertyVal Name="Width">63</PropertyVal>
+  <PropertyVal Name="Top">53</PropertyVal>
+  <PropertyVal Name="Left">257</PropertyVal>
+  <PropertyVal Name="Scope">0</PropertyVal>
+  <PropertyVal Name="Super">PushButton</PropertyVal>
+  <PropertyVal Name="Index">-2147483648</PropertyVal>
+  <PropertyVal Name="Name">PushButton1</PropertyVal>
+  <ControlIndex>5</ControlIndex>
+  <Locked>0</Locked>
+  <PartID>2005266431</PartID>
+ </Control>
+</block>
+<block type="Menu" ID="491169791">
+ <ObjName>MainMenuBar</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <MenuItem>
+  <ItemSpecialMenu>0</ItemSpecialMenu>
+  <ItemName>FileMenu</ItemName>
+  <ItemText>&amp;File</ItemText>
+  <ItemIndex>-2147483648</ItemIndex>
+  <ItemShortcut></ItemShortcut>
+  <MenuAutoEnable>1</MenuAutoEnable>
+  <TextEncoding>134217984</TextEncoding>
+  <MenuItemVisible>1</MenuItemVisible>
+  <ItemFlags>0</ItemFlags>
+  <Superclass>MenuItem</Superclass>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>FileQuit</ItemName>
+   <ItemText>#App.kFileQuit</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>#App.kFileQuitShortcut</ItemShortcut>
+   <MenuShortcut>#App.kFileQuitShortcut</MenuShortcut>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>QuitMenuItem</Superclass>
+  </MenuItem>
+ </MenuItem>
+ <MenuItem>
+  <ItemSpecialMenu>0</ItemSpecialMenu>
+  <ItemName>EditMenu</ItemName>
+  <ItemText>&amp;Edit</ItemText>
+  <ItemIndex>-2147483648</ItemIndex>
+  <ItemShortcut></ItemShortcut>
+  <MenuAutoEnable>1</MenuAutoEnable>
+  <TextEncoding>134217984</TextEncoding>
+  <MenuItemVisible>1</MenuItemVisible>
+  <ItemFlags>0</ItemFlags>
+  <Superclass>MenuItem</Superclass>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditUndo</ItemName>
+   <ItemText>&amp;Undo</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>Cmd+Z</ItemShortcut>
+   <MenuShortcut>Z</MenuShortcut>
+   <MenuShortcutModifier>1</MenuShortcutModifier>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditSeparator1</ItemName>
+   <ItemText>-</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut></ItemShortcut>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditCut</ItemName>
+   <ItemText>Cu&amp;t</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>Cmd+X</ItemShortcut>
+   <MenuShortcut>X</MenuShortcut>
+   <MenuShortcutModifier>1</MenuShortcutModifier>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditCopy</ItemName>
+   <ItemText>&amp;Copy</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>Cmd+C</ItemShortcut>
+   <MenuShortcut>C</MenuShortcut>
+   <MenuShortcutModifier>1</MenuShortcutModifier>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditPaste</ItemName>
+   <ItemText>&amp;Paste</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>Cmd+V</ItemShortcut>
+   <MenuShortcut>V</MenuShortcut>
+   <MenuShortcutModifier>1</MenuShortcutModifier>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditClear</ItemName>
+   <ItemText>#App.kEditClear</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut></ItemShortcut>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditSeparator2</ItemName>
+   <ItemText>-</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut></ItemShortcut>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+  <MenuItem>
+   <ItemSpecialMenu>0</ItemSpecialMenu>
+   <ItemName>EditSelectAll</ItemName>
+   <ItemText>Select &amp;All</ItemText>
+   <ItemIndex>-2147483648</ItemIndex>
+   <ItemShortcut>Cmd+A</ItemShortcut>
+   <MenuShortcut>A</MenuShortcut>
+   <MenuShortcutModifier>1</MenuShortcutModifier>
+   <MenuAutoEnable>1</MenuAutoEnable>
+   <TextEncoding>134217984</TextEncoding>
+   <MenuItemVisible>1</MenuItemVisible>
+   <ItemFlags>0</ItemFlags>
+   <Superclass>MenuItem</Superclass>
+  </MenuItem>
+ </MenuItem>
+</block>
+<block type="BuildAutomation" ID="420005887">
+ <ObjName>Build Automation</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="1854588927">
+ <ObjName>Linux</ObjName>
+ <ObjContainerID>420005887</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="862660607">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>1854588927</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="660045823">
+ <ObjName>Mac OS X</ObjName>
+ <ObjContainerID>420005887</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="284934143">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>660045823</ObjContainerID>
+</block>
+<block type="BuildStepsList" ID="2111502335">
+ <ObjName>Windows</ObjName>
+ <ObjContainerID>420005887</ObjContainerID>
+</block>
+<block type="BuildProjectStep" ID="2004449279">
+ <ObjName>Build</ObjName>
+ <ObjContainerID>2111502335</ObjContainerID>
+</block>
+<block type="Module" ID="1294882815">
+ <ObjName>haversine</ObjName>
+ <ObjContainerID>0</ObjContainerID>
+ <IsClass>0</IsClass>
+ <ItemFlags>1</ItemFlags>
+ <IsInterface>0</IsInterface>
+ <Compatibility></Compatibility>
+ <Method>
+  <ItemName>init</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>1648427007</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Sub init()</SourceLine>
+   <SourceLine>hko = New Dictionary</SourceLine>
+   <SourceLine>Dim d As Dictionary</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.305582</SourceLine>
+   <SourceLine>d.Value("lon")=113.914124</SourceLine>
+   <SourceLine>hko.Value("Chek Lap Kok")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")= 22.210121</SourceLine>
+   <SourceLine>d.Value("lon")=114.029108</SourceLine>
+   <SourceLine>hko.Value("Cheung Chau")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.302246</SourceLine>
+   <SourceLine>d.Value("lon")=114.174139</SourceLine>
+   <SourceLine>hko.Value("HK Observatory")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.469236</SourceLine>
+   <SourceLine>d.Value("lon")=113.983401</SourceLine>
+   <SourceLine>hko.Value("Lau Fau San")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.286995</SourceLine>
+   <SourceLine>d.Value("lon")=114.038209</SourceLine>
+   <SourceLine>hko.Value("Peng Chau")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.390721</SourceLine>
+   <SourceLine>d.Value("lon")=114.202234</SourceLine>
+   <SourceLine>hko.Value("Sha Tin")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.435531</SourceLine>
+   <SourceLine>d.Value("lon")=114.083070</SourceLine>
+   <SourceLine>hko.Value("Shek Kong")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.505465</SourceLine>
+   <SourceLine>d.Value("lon")=114.122356</SourceLine>
+   <SourceLine>hko.Value("Sheung Shui")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.538829</SourceLine>
+   <SourceLine>d.Value("lon")=114.160223</SourceLine>
+   <SourceLine>hko.Value("Ta Kwu Ling")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.444778</SourceLine>
+   <SourceLine>d.Value("lon")=114.168508</SourceLine>
+   <SourceLine>hko.Value("Tai Po")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.181801</SourceLine>
+   <SourceLine>d.Value("lon")=114.303081</SourceLine>
+   <SourceLine>hko.Value("Waglan Island")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>d = New Dictionary</SourceLine>
+   <SourceLine>d.Value("lat")=22.470267</SourceLine>
+   <SourceLine>d.Value("lon")=114.005896</SourceLine>
+   <SourceLine>hko.Value("Wetland Park")=d</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Sub</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams></ItemParams>
+  <ItemResult></ItemResult>
+ </Method>
+ <Method>
+  <ItemName>haversine</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>988033023</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function haversine(lat1 As Double, lon1 As Double, lat2 As Double, lon2 As Double) As Double</SourceLine>
+   <SourceLine>Dim d As New Dictionary</SourceLine>
+   <SourceLine>Dim R, x1, x2, dLat, dLon, a, c As Double</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>R = 6371 // km</SourceLine>
+   <SourceLine>x1 = lat2-lat1</SourceLine>
+   <SourceLine>dLat = x1.toRad()</SourceLine>
+   <SourceLine>x2 = lon2-lon1</SourceLine>
+   <SourceLine>dLon = x2.toRad()</SourceLine>
+   <SourceLine>a = sin(dLat / 2) * sin(dLat / 2) + cos(lat1.toRad()) * cos(lat2.toRad()) * sin(dLon / 2) * sin(dLon / 2)</SourceLine>
+   <SourceLine>c = 2 * atan2(sqrt(a), sqrt(1 - a))</SourceLine>
+   <SourceLine>c = R * c</SourceLine>
+   <SourceLine>return round(c * 100.0) / 100</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>lat1 As Double, lon1 As Double, lat2 As Double, lon2 As Double</ItemParams>
+  <ItemResult>Double</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>toRad</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>1829138431</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function toRad(Extends X As Double) As Double</SourceLine>
+   <SourceLine>Return X * 3.141592653 /0180</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>Extends X As Double</ItemParams>
+  <ItemResult>Double</ItemResult>
+ </Method>
+ <Method>
+  <ItemName>closestDataPoint</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>541196287</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>Function closestDataPoint(lat1 As Double, lon1 As Double) As Dictionary</SourceLine>
+   <SourceLine>Dim d, rslt As Dictionary</SourceLine>
+   <SourceLine>Dim distance, dl, dpLat, dpLon As Double</SourceLine>
+   <SourceLine>Dim name As String</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rslt = New Dictionary</SourceLine>
+   <SourceLine>dl = 10000000</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>For Each x As DictionaryEntry In hko</SourceLine>
+   <SourceLine>d = hko.Value(x.Key)</SourceLine>
+   <SourceLine>distance=haversine(lat1, lon1, d.Value("lat").DoubleValue, d.Value("lon").DoubleValue)</SourceLine>
+   <SourceLine>If distance &lt; dl Then</SourceLine>
+   <SourceLine>dl = distance</SourceLine>
+   <SourceLine>dpLat = d.Value("lat")</SourceLine>
+   <SourceLine>dpLon = d.Value("lon")</SourceLine>
+   <SourceLine>name = x.Key.StringValue</SourceLine>
+   <SourceLine>End If</SourceLine>
+   <SourceLine>Next</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>rslt.Value("name") = name</SourceLine>
+   <SourceLine>rslt.Value("lat") = dpLat</SourceLine>
+   <SourceLine>rslt.Value("lon") = dpLon</SourceLine>
+   <SourceLine>rslt.Value("distance") = dl</SourceLine>
+   <SourceLine></SourceLine>
+   <SourceLine>Return rslt</SourceLine>
+   <SourceLine>End Function</SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <AliasName></AliasName>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+  <ItemParams>lat1 As Double, lon1 As Double</ItemParams>
+  <ItemResult>Dictionary</ItemResult>
+ </Method>
+ <Property>
+  <ItemName>hko</ItemName>
+  <Compatibility></Compatibility>
+  <Visible>1</Visible>
+  <PartID>1509468159</PartID>
+  <ItemSource>
+   <TextEncoding>134217984</TextEncoding>
+   <SourceLine>hko As Dictionary</SourceLine>
+   <SourceLine></SourceLine>
+  </ItemSource>
+  <TextEncoding>134217984</TextEncoding>
+  <ItemDeclaration>hko As Dictionary</ItemDeclaration>
+  <ItemFlags>0</ItemFlags>
+  <IsShared>0</IsShared>
+ </Property>
+ <ViewBehavior>
+  <ViewProperty>
+   <ObjName>Name</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Index</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <PropertyValue>-2147483648</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Super</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>ID</PropertyGroup>
+   <ItemType>String</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Left</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+  <ViewProperty>
+   <ObjName>Top</ObjName>
+   <Visible>1</Visible>
+   <PropertyGroup>Position</PropertyGroup>
+   <PropertyValue>0</PropertyValue>
+   <ItemType>Integer</ItemType>
+  </ViewProperty>
+ </ViewBehavior>
+</block>
+<block type="UIState" ID="0">
+ <WarningPreferences>
+  <ItemName>5</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>6</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>7</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>14</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>2</ItemName>
+  <ItemData>0</ItemData>
+  <ItemName>-2</ItemName>
+  <ItemData>0</ItemData>
+ </WarningPreferences>
+ <StudioWindowState>
+  <EditBounds><Rect left="0" top="23" width="1440" height="877"/></EditBounds>
+  <WindowMaximized>0</WindowMaximized>
+  <Editors>
+   <EditorCount>1</EditorCount>
+   <Editor>
+    <EditorIndex>0</EditorIndex>
+    <EditorLocation>Window1.Controls.PushButton1.Action</EditorLocation>
+    <EditorPath></EditorPath>
+    <EditingPartID>63510527</EditingPartID>
+    <EditorPath></EditorPath>
+   </Editor>
+   <SelectedTab>0</SelectedTab>
+  </Editors>
+ </StudioWindowState>
+</block>
+</RBProject>

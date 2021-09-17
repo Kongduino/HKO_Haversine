@@ -15,6 +15,7 @@ hko["Wetland Park"]=[22.470267, 114.005896]
 Number.prototype.toRad = function() {
    return this * Math.PI / 180;
 }
+
 function haversine(lat1, lon1, lat2, lon2) {
   var R = 6371; // km
   var x1 = lat2-lat1;
